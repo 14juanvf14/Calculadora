@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.Objects;
+import java.text.DecimalFormat;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -109,23 +109,115 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickIgual(View view) {
-        performOperation();
-        if ("raiz".equals(operacion)) {
+        if (operacion.equals("raiz")) {
             if (num1 >= 0) {
-                txtPantalla.setText(String.format("%.2f", Math.sqrt(num1)));
+                txtPantalla.setText(formatoDecimal(Math.sqrt(num1)));
             } else {
                 Toast.makeText(this, "No se puede calcular la raíz cuadrada de un número negativo", Toast.LENGTH_LONG).show();
             }
+        } else if (operacion.equals("cuadrado")) {
+            txtPantalla.setText(formatoDecimal(Math.pow(num1, 2)));
+        } else if (operacion.equals("seno")) {
+            try {
+                txtPantalla.setText(formatoDecimal(Math.sin(Math.toRadians(num1))));
+            } catch (Exception e) {
+                Toast.makeText(this, "Error al calcular el seno", Toast.LENGTH_LONG).show();
+            }
+        } else if (operacion.equals("coseno")) {
+            try {
+                txtPantalla.setText(formatoDecimal(Math.cos(Math.toRadians(num1))));
+            } catch (Exception e) {
+                Toast.makeText(this, "Error al calcular el coseno", Toast.LENGTH_LONG).show();
+            }
+        } else if (operacion.equals("tangente")) {
+            try {
+                txtPantalla.setText(formatoDecimal(Math.tan(Math.toRadians(num1))));
+            } catch (Exception e) {
+                Toast.makeText(this, "Error al calcular la tangente", Toast.LENGTH_LONG).show();
+            }
+        } else if (operacion.equals("lg10")) {
+            try {
+                txtPantalla.setText(formatoDecimal(Math.log10(num1)));
+            } catch (Exception e) {
+                Toast.makeText(this, "Error al calcular el logaritmo base 10", Toast.LENGTH_LONG).show();
+            }
+        } else {
+            performOperation();
         }
-
         operacion = "";
     }
 
+    public String formatoDecimal(double numero) {
+        DecimalFormat df = new DecimalFormat("#.#####");
+        df.setMaximumFractionDigits(5);
+        df.setMinimumFractionDigits(0);
+        return df.format(numero);
+    }
+
+
     public void onClickRaizCuadrada(View view) {
-        performOperation();
         operacion = "raiz";
-        num1 = Double.parseDouble(txtPantalla.getText().toString());
-        txtPantalla.setText("√" + num1);
+        try {
+            num1 = Double.parseDouble(txtPantalla.getText().toString());
+            txtPantalla.setText("√(" + num1 + ")");
+        } catch (NumberFormatException e) {
+            // Manejar el caso en el que el texto no se pueda analizar como un número flotante
+            Toast.makeText(this, "Entrada inválida", Toast.LENGTH_SHORT).show();
+        }
+    }
+    public void onClickCuadrado(View view) {
+        operacion = "cuadrado";
+        try {
+            num1 = Double.parseDouble(txtPantalla.getText().toString());
+            txtPantalla.setText(num1 + "²");
+        } catch (NumberFormatException e) {
+            // Manejar el caso en el que el texto no se pueda analizar como un número flotante
+            Toast.makeText(this, "Entrada inválida", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void onClickSeno(View view) {
+        operacion = "seno";
+        try {
+            num1 = Double.parseDouble(txtPantalla.getText().toString());
+            txtPantalla.setText("sin(" + num1 + ")");
+        } catch (NumberFormatException e) {
+            // Manejar el caso en el que el texto no se pueda analizar como un número flotante
+            Toast.makeText(this, "Entrada inválida", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void onClickCoseno(View view) {
+        operacion = "coseno";
+        try {
+            num1 = Double.parseDouble(txtPantalla.getText().toString());
+            txtPantalla.setText("cos(" + num1 + ")");
+        } catch (NumberFormatException e) {
+            // Manejar el caso en el que el texto no se pueda analizar como un número flotante
+            Toast.makeText(this, "Entrada inválida", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void onClickTangente(View view) {
+        operacion = "tangente";
+        try {
+            num1 = Double.parseDouble(txtPantalla.getText().toString());
+            txtPantalla.setText("tan(" + num1 + ")");
+        } catch (NumberFormatException e) {
+            // Manejar el caso en el que el texto no se pueda analizar como un número flotante
+            Toast.makeText(this, "Entrada inválida", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void onClickLg10(View view) {
+        operacion = "lg10";
+        try {
+            num1 = Double.parseDouble(txtPantalla.getText().toString());
+            txtPantalla.setText("lg(" + num1 + ")");
+        } catch (NumberFormatException e) {
+            // Manejar el caso en el que el texto no se pueda analizar como un número flotante
+            Toast.makeText(this, "Entrada inválida", Toast.LENGTH_SHORT).show();
+        }
     }
 
 
@@ -169,12 +261,8 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(this, "Se ha ejecutado una división por 0", Toast.LENGTH_LONG).show();
                         }
                         break;
-                    case "raiz":
-                        // Calcula la raíz cuadrada y muestra el resultado
-
-                        break;
                 }
-                txtPantalla.setText(String.format("%.2f", num1));
+                txtPantalla.setText(formatoDecimal(num1));
             } else {
                 // Si no hay operación actual, simplemente asignamos el valor actual a num1
                 num1 = currentNumber;

@@ -1,42 +1,56 @@
 
-D
-java:S1659""Declare "num2" on a separate line.(ÒôÙæùÿÿÿÿ8™ãû‰ã1
-G
-java:S1172"+Remove this unused method parameter "view".(›¡°8§ãû‰ã1
-H
-java:S1172"+Remove this unused method parameter "view".(óíö8«ãû‰ã1
-H
-java:S1172"+Remove this unused method parameter "view".(€ÊØ™8«ãû‰ã1
-M
-java:S1172#"+Remove this unused method parameter "view".(ÔûÎùÿÿÿÿ8«ãû‰ã1
-M
-java:S1172'"+Remove this unused method parameter "view".(Šº¾£úÿÿÿÿ8«ãû‰ã1
-G
-java:S1172+"+Remove this unused method parameter "view".(‘ÔJ8«ãû‰ã1
-M
-java:S1172/"+Remove this unused method parameter "view".(Â·é€úÿÿÿÿ8«ãû‰ã1
-M
-java:S11723"+Remove this unused method parameter "view".(¼¦¨ãÿÿÿÿÿ8«ãû‰ã1
-H
-java:S11727"+Remove this unused method parameter "view".(àœ8«ãû‰ã1
-M
-java:S1172;"+Remove this unused method parameter "view".(†±÷üÿÿÿÿ8«ãû‰ã1
-M
-java:S1172?"+Remove this unused method parameter "view".(…–Áşÿÿÿÿ8«ãû‰ã1
-M
-java:S1172C"+Remove this unused method parameter "view".(í‡™ïÿÿÿÿÿ8·ãû‰ã1
-M
-java:S1172P"+Remove this unused method parameter "view".(Ê¨‚úÿÿÿÿ8¹ãû‰ã1
-M
-java:S1172W"+Remove this unused method parameter "view".(„—ö­ùÿÿÿÿ8¹ãû‰ã1
-M
-java:S1172]"+Remove this unused method parameter "view".(§Ëşæúÿÿÿÿ8¹ãû‰ã1
-M
-java:S1172c"+Remove this unused method parameter "view".(›®à¶ıÿÿÿÿ8¹ãû‰ã1
-H
-java:S1172i"+Remove this unused method parameter "view".(ïÓÌõ8¹ãû‰ã1
-M
-java:S1172o"+Remove this unused method parameter "view".(±ë´ıÿÿÿÿ8¹ãû‰ã1
-M
-java:S1172|"+Remove this unused method parameter "view".(ÓœÙùÿÿÿÿ8¹ãû‰ã1
-D	java:S131›""Add a default case to this switch.(ºÓ“üÿÿÿÿ8Çãû‰ã1
+–
+java:S1192¥"RDefine a constant instead of duplicating this literal "Entrada invÃ¡lida" 6 times.(†Š¯£8ÑÊäÜã1J$93a36a2c-1a93-4a1e-9fc9-fc9443cc2dc5
+j
+java:S1659""Declare "num2" on a separate line.(ÒôÙæùÿÿÿÿ8¯ËäÜã1J$49b0762e-f22b-4c3d-bb25-b01ee0a9c67a
+m
+java:S1172"+Remove this unused method parameter "view".(›¡°8ÁËäÜã1J$9570d1c5-c5f8-4040-b2b2-ce9d148516b2
+n
+java:S1172"+Remove this unused method parameter "view".(óíö8ÂËäÜã1J$cb259581-e309-44ca-9771-e308cac23a22
+n
+java:S1172"+Remove this unused method parameter "view".(€ÊØ™8ÃËäÜã1J$fe24fea5-938b-4284-b418-bb6313402fb5
+s
+java:S1172#"+Remove this unused method parameter "view".(ÔûÎùÿÿÿÿ8ÄËäÜã1J$5dd9760a-9c21-470f-a08b-3f31effaadcf
+s
+java:S1172'"+Remove this unused method parameter "view".(Šº¾£úÿÿÿÿ8ÅËäÜã1J$08b7ca5a-8db5-4948-b868-8cd0f7e86e4d
+m
+java:S1172+"+Remove this unused method parameter "view".(‘ÔJ8ÅËäÜã1J$76fcad4e-d2ba-429b-804b-cc341ead5659
+s
+java:S1172/"+Remove this unused method parameter "view".(Â·é€úÿÿÿÿ8ÇËäÜã1J$bd2c61a2-9924-4947-89ff-bf21fa00e001
+s
+java:S11723"+Remove this unused method parameter "view".(¼¦¨ãÿÿÿÿÿ8ÈËäÜã1J$c69d4eca-1c9e-4393-9378-344f95327915
+n
+java:S11727"+Remove this unused method parameter "view".(àœ8ÉËäÜã1J$05c60d44-f5d0-4603-839c-c16201abc25d
+s
+java:S1172;"+Remove this unused method parameter "view".(†±÷üÿÿÿÿ8ÊËäÜã1J$d77ee6e1-16e2-4179-83cc-7e1ee693b829
+s
+java:S1172?"+Remove this unused method parameter "view".(…–Áşÿÿÿÿ8ËËäÜã1J$e9dda9d7-0e10-41b7-b554-ef563193ccc9
+s
+java:S1172C"+Remove this unused method parameter "view".(í‡™ïÿÿÿÿÿ8ÍËäÜã1J$24943c84-0de1-43f2-b377-7006b22fc483
+s
+java:S1172P"+Remove this unused method parameter "view".(Ê¨‚úÿÿÿÿ8ĞËäÜã1J$8600c243-3bbf-44f6-8f96-e16a7007815e
+s
+java:S1172W"+Remove this unused method parameter "view".(„—ö­ùÿÿÿÿ8ÑËäÜã1J$029c77fb-ce74-4dde-a0e9-4a9c6a83ea08
+s
+java:S1172]"+Remove this unused method parameter "view".(§Ëşæúÿÿÿÿ8ÓËäÜã1J$8928db06-5a9c-447a-bca6-6c275ac7a830
+s
+java:S1172c"+Remove this unused method parameter "view".(›®à¶ıÿÿÿÿ8ÕËäÜã1J$0aa2c015-00c1-407e-8990-c4c0fef24706
+n
+java:S1172i"+Remove this unused method parameter "view".(ïÓÌõ8ÖËäÜã1J$2589a234-3dfa-4cac-9785-3711d36dc3a3
+š
+java:S3776o"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(±ë´ıÿÿÿÿ8–Í„İã1J$cd3ce205-c19d-4f9a-af60-fef8ddc97602
+s
+java:S1172o"+Remove this unused method parameter "view".(±ë´ıÿÿÿÿ8áËäÜã1J$36064f04-ed4a-454d-85df-a0d4eddf77c9
+t
+java:S1172"+Remove this unused method parameter "view".(ÓœÙùÿÿÿÿ8åËäÜã1J$bd4b2f4d-68c8-4c8f-86db-246207855c29
+o
+java:S1172¨"+Remove this unused method parameter "view".(Ğ¬”’8çËäÜã1J$b36be8c3-1c98-44bf-8f09-0c3fcbfe6c6c
+t
+java:S1172³"+Remove this unused method parameter "view".(áûÖ“şÿÿÿÿ8éËäÜã1J$99cdb9c4-c8b0-4eef-9e50-8ead6ddf3ddc
+n
+java:S1172¾"+Remove this unused method parameter "view".(½Û8ëËäÜã1J$3240a628-8744-489c-a2fd-91298f12ff1f
+o
+java:S1172É"+Remove this unused method parameter "view".(«ß¦¨8ïËäÜã1J$e66a503c-e5cd-4c58-89f8-07ae8aa89cf6
+n
+java:S1172Ô"+Remove this unused method parameter "view".(ÖìÒ/8ĞÍ„İã1J$cd76d5e1-90ff-45da-adcc-2c6d5cef4371
+j	java:S131÷""Add a default case to this switch.(ºÓ“üÿÿÿÿ8õËäÜã1J$6b711dcf-dd6a-4344-bb3d-4f5c374baa6e
